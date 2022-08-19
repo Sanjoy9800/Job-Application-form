@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application form</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        body{
+            background-color: rgb(53, 171, 171);
+            text-align: left;
+            border: 2px solid rgb(30, 179, 19);
+            text-align: center;
+        }
+        #mytext{
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h3>Job application form</h3>
+    <form action="backend.php" method="get">
+        <label for="mytext">Write somthing about yourself:</label>
+        <div>
+             <br><textarea name="mytext" id="mytext" cols="30" rows="4" placeholder="Write somthing about yourself"></textarea>
+        </div>
+        <br>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="my name" id="name" placeholder="Name">
+        </div>
+        <br>
+        <label for="mob">Mob number</label>
+        <div>
+            <input type="1" name="my number" id="mob" placeholder="Mobile Number">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="Email add" id="email" placeholder="Email">
+        </div>
+        <br>
+        <div>
+            Year:<input type="date" name="my date" id="">
+        </div>
+        <br>
+        <div>
+           Your Age:<input type="number" name="my age" id="">
+        </div>
+        <br>
+        <div>
+            Are you eligible?<input type="checkbox" name="My eligibility" id="">
+        </div>
+        <br>
+        <div>
+            Gender-: Male<input type="radio" name="my gender" id=""> Female<input type="radio" name="my gender" id="">
+            Other<input type="radio" name="my gender" id="">
+
+        </div>
+        <br>
+        <div>
+         <label for="car">car</label>
+         <select name="mycar" id="car">
+         <option value="ind">indica </option>
+         <option value="swf" selected>swift</option>
+        </select>
+        </div>
+
+        <br>
+        <label for="password">Password</label>
+        <div>
+            <input type="password" name="my passord" id="password" placeholder="Enter Password">
+        </div>
+
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="datetime-local" name="date" id="date">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+        <br>
+        <!-- <div>
+            <button>test1</button>
+            <button>test2</button>
+        </div> -->
+
+    </form>
+
+</body>
+
+</html>
